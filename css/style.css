@@ -4,72 +4,95 @@
 
 body {
   background-image: url("https://s3.amazonaws.com/makeitreal/cars/jaguar-xe.jpg");
-  height: 100%;
-  width: 100%;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 100%;
+  width: 100%;
 }
 
 .container {
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 7px;
-  width: 80%;
+  margin-top: 60px;
+  margin-left: 70px;
   max-width: 600px;
   position: absolute;
-  margin-top: 90px;
-  margin-left: 70px;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 
 .content {
   color: white;
   font-family: 'Roboto', sans-serif;
-  padding: 10px 30px 12px 30px;
+  padding: 10px 45px 20px 35px;
 }
 
-button {
-  background-color: #DB3030;
-  padding: 10px 28px;
-  color: white;
-  border-color: #DB3030;
+p {
   font-size: 15px;
+  line-height: 20px;
+  padding-bottom: 5px;
+}
+
+
+a {
+  background-color: #DB3030;
+  border-color: #DB3030;
+  color: white;
+  font-size: 14px;
   font-weight: bold;
+  padding: 9px 23px;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-  container {
-    width: 100%;
-  }
-  button {
-    padding: 10px 28px;
-  }
-}
 
-@media screen and (max-width: 400px) {
-  container {
+
+/*Media screen*/
+@media screen and (max-width:1280px) and (min-width:690px) {
+  .container, .content {
+    max-width: 600px;
     width: 100%;
-  }
-  button {
-    padding: 10px 28px;
   }
 }
 
-@media screen and (max-width: 200px) {
-  container {
+@media screen and (max-width:689px) and (min-width:647px) {
+  .container, .content {
+    max-width: 550px;
     width: 100%;
-  }
-  button {
-    padding: 10px 28px;
   }
 }
 
-@media screen and (max-width: 100px) {
-  container {
+@media screen and (max-width:646px) and (min-width:600px) {
+  .container, .content {
+    max-width: 500px;
     width: 100%;
   }
+}
 
-  button {
-    padding: 10px 28px;
+@media screen and (max-width:599px) and (min-width:545px) {
+  .container, .content {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:544px) and (min-width:500px) {
+  .container, .content {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:499px) and (min-width:446px) {
+  .container, .content {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:445px) and (min-width:400px) {
+  .container, .content {
+    max-width: 340px;
+    width: 100%;
   }
 }
